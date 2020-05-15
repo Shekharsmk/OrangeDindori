@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/im_cartimage1"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="100dp"
+
+            />
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/tv_card_productname1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:text="productname"
+                android:textSize="18dp"
+                />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Quantity :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/tv_cart_qnt1"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Cost :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/tv_cart_price1"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+          <!--  <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Status :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/tv_cart_status"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#d3d3d3" />
+</LinearLayout>

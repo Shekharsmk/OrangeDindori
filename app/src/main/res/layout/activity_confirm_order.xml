@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmOrderActivity">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address_name_aco"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:text="name" />
+
+
+            <TextView
+                android:id="@+id/address_full_aco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/address_phno_aco"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#d3d3d3" />
+
+        <Button
+            android:id="@+id/bt_Addaddress_aco"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:shadowColor="@color/cardview_dark_background"
+
+            android:text="Change Address"
+            android:background="@drawable/button_selector"
+            android:textColor="#000000"
+            android:paddingBottom="3dp"/>
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="413dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart1data_aco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/bt_proceed_to_payment_aco"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:shadowColor="@color/cardview_dark_background"
+
+        android:text="Proceed to Payment"
+        android:background="@drawable/button_selector"
+        android:textColor="#000000"/>
+   <!-- <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Total Amount "
+            android:layout_weight="3"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/et_amount_detail_cart_aco"
+            android:textSize="18dp"
+            android:layout_gravity="end"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_payment_detail_cart"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_cod_detail_cart_aco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash on delivery"
+            android:textSize="18dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_online_detail_cart_aco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Online Payment"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <Button
+            android:id="@+id/bt_cancle_payment_order_aco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:text="cancel"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bt_submit_payment_order_aco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:text="submit"
+            android:textColor="#ffffff" />
+    </LinearLayout>-->
+</LinearLayout>
